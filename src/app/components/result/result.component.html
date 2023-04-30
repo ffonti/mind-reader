@@ -1,0 +1,8 @@
+<ng-container *ngIf="!loadingDone; else loadingFinished">
+  <span class="loader"></span>
+  <p>Analyzing...</p>
+</ng-container>
+<ng-template #loadingFinished>
+  <p>You're thinking of the number {{ number }}</p>
+  <a href="/homePage">Go to homepage</a>
+</ng-template>

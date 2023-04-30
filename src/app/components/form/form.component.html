@@ -1,1 +1,6 @@
-<p>form works!</p>
+<form>
+  <label for="fname">Think of a number between 1 and 10: </label>
+  <input [(ngModel)]="input" type="number" id="fname" name="fname" />
+  <input type="submit" (click)="numberSelected()" value="Read my mind" />
+</form>
+<p>{{ msg }}</p>
