@@ -15,7 +15,7 @@ export class FormComponent {
 
   numberSelected(): void {
     if (this.input < 1 || this.input > 10) {
-      this.msg = 'Errore! Inserire un numero da 1 a 10';
+      this.msg = 'Error! the number must be between 1 and 10';
     } else {
       this.msg = '';
       this.numberService.number = this.input;
